@@ -1,0 +1,16 @@
+# prepare
+repo init --repo-url  http://github.com/aosp-mirror/tools_repo.git -u http://github.com/rockchip-toybrick/manifest.git -b master -m rk3399pro.xml
+repo sync -j8
+
+# rknn-toolkit-v1.3.0
+adb devices
+ret = rknn.init_runtime(target='rk3399', device_id='TDs33101190500149')
+
+# rknn-api-1.3.0
+sudo mv /usr/bin/aarch64-linux-gnu-gcc /usr/bin/aarch64-linux-gnu-gcc.bu
+sudo mv /usr/bin/aarch64-linux-gnu-g++ /usr/bin/aarch64-linux-gnu-g++.bu
+sudo ln -s /home/manu/tmp/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-gcc /usr/bin/aarch64-linux-gnu-gcc
+sudo ln -s /home/manu/tmp/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-g++ /usr/bin/aarch64-linux-gnu-g++
+
+mkdir build_arm; cd build_arm
+cmake -DCMAKE_SYSTEM_NAME=Linux -DCMAKE_C_COMPILER=aarch64-linux-gnu-gcc -DCMAKE_CXX_COMPILER=aarch64-linux-gnu-g++ ..
