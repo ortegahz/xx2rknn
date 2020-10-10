@@ -2,6 +2,10 @@
 repo init --repo-url  http://github.com/aosp-mirror/tools_repo.git -u http://github.com/rockchip-toybrick/manifest.git -b master -m rk3399pro.xml
 repo sync -j8
 
+# linuxTool-v1.0
+sudo python flash.py -l all
+sudo python flash.py -d all
+
 # rknn-toolkit-v1.3.0
 adb devices
 ret = rknn.init_runtime(target='rk3399', device_id='TDs33101190500149')
