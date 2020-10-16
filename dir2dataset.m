@@ -5,8 +5,8 @@
 close all; clear all;
 
 %%
-opts.dir_img = '/media/manu/intel/workspace/rknn/face_detection/demo_python/imgs';
-opts.output = '/media/manu/intel/workspace/rknn/face_detection/demo_python/dataset.txt';
+opts.dir_img = '/media/manu/intel/workspace/rknn/yolov3/demo_python/imgs';
+opts.output = '/media/manu/intel/workspace/rknn/yolov3/demo_python/dataset.txt';
 
 %%
 list_img  = struct2cell(dir(fullfile(opts.dir_img, '*.jpg')))';

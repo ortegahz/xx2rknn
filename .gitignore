@@ -1,2 +1,4 @@
 
 face_recognition/demo_cpp/build_arm/
+
+*.rknn

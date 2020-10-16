@@ -45,7 +45,7 @@ if __name__ == '__main__':
     print('--> Building model')
     ret = rknn.build(do_quantization=True, dataset='./dataset.txt')
     if ret != 0:
-        print('Build mobilenet_v2 failed!')
+        print('Build detection failed!')
         exit(ret)
     print('done')
 
@@ -58,7 +58,7 @@ if __name__ == '__main__':
     print('done')
 
     # Set inputs
-    img = cv2.imread('/media/manu/samsung/pics/126_1152_576.bmp')
+    img = cv2.imread('/media/manu/samsung/pics/students.bmp')
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
     print('--> Init runtime environment')
