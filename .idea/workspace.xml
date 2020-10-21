@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="db821421-b582-454d-a910-806159692af1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dir2dataset.m" beforeDir="false" afterPath="$PROJECT_DIR$/dir2dataset.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_detection/demo_python/detection.rknn" beforeDir="false" afterPath="$PROJECT_DIR$/face_detection/demo_python/detection.rknn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/face_detection/demo_python/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_detection/demo_python/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_recognition/demo_python/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/demo_python/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yolov3/demo_python/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/yolov3/demo_python/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +14,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/rknn$test.coverage" NAME="test Coverage Results" MODIFIED="1602838998875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/yolov3/demo_python" />
-    <SUITE FILE_PATH="coverage/rknn$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1602837037794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/face_detection/demo_python" />
+    <SUITE FILE_PATH="coverage/rknn$test.coverage" NAME="test Coverage Results" MODIFIED="1603272280883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/face_detection/demo_python" />
+    <SUITE FILE_PATH="coverage/rknn$export_rknn_precompile_model.coverage" NAME="export_rknn_precompile_model Coverage Results" MODIFIED="1603267927948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rknn$test__2_.coverage" NAME="test (2) Coverage Results" MODIFIED="1603273351582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/yolov3/demo_python" />
+    <SUITE FILE_PATH="coverage/rknn$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1603273217336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/face_recognition/demo_python" />
     <SUITE FILE_PATH="coverage/rknn$rknn.coverage" NAME="rknn Coverage Results" MODIFIED="1598413058435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FavoritesManager">
@@ -32,11 +34,35 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/face_detection/demo_python/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/face_recognition/demo_python/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yolov3/demo_python/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+            <state relative-caret-position="270">
+              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -49,6 +75,10 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>tf.ConfigProto</find>
+      <find>rv1126</find>
+      <find>The target_platform is not set in config</find>
+      <find>using default target platform</find>
+      <find>target</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -60,9 +90,14 @@
         <option value="$PROJECT_DIR$/rknn.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/demo_python/test.py" />
-        <option value="$PROJECT_DIR$/face_recognition/demo_python/test.py" />
-        <option value="$PROJECT_DIR$/face_detection/demo_python/test.py" />
+        <option value="$PROJECT_DIR$/official/demo_python/caffe/mobilenet_v2/test.py" />
+        <option value="$PROJECT_DIR$/export_rknn_precompile_model.py" />
+        <option value="$PROJECT_DIR$/official/demo_python/tflite/mobilenet_v1/test.py" />
+        <option value="$PROJECT_DIR$/official/examples/tflite/mobilenet_v1/test.py" />
+        <option value="$PROJECT_DIR$/cmds_tb-rk3399prod.txt" />
         <option value="$PROJECT_DIR$/yolov3/demo_python/test.py" />
+        <option value="$PROJECT_DIR$/face_detection/demo_python/test.py" />
+        <option value="$PROJECT_DIR$/face_recognition/demo_python/test.py" />
       </list>
     </option>
   </component>
@@ -88,12 +123,12 @@
             <path>
               <item name="rknn" type="b2602c69:ProjectViewProjectNode" />
               <item name="rknn" type="462c0819:PsiDirectoryNode" />
-              <item name="face_detection" type="462c0819:PsiDirectoryNode" />
+              <item name="yolov3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rknn" type="b2602c69:ProjectViewProjectNode" />
               <item name="rknn" type="462c0819:PsiDirectoryNode" />
-              <item name="face_detection" type="462c0819:PsiDirectoryNode" />
+              <item name="yolov3" type="462c0819:PsiDirectoryNode" />
               <item name="demo_python" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -105,7 +140,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/tmp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../insightface" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -122,7 +157,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.test (2)">
     <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="rknn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,12 +166,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/face_detection/demo_python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/face_recognition/demo_python" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/face_detection/demo_python/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/face_recognition/demo_python/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,7 +180,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="rknn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -167,10 +202,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="rknn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/face_detection/demo_python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/face_detection/demo_python/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.test (2)" />
         <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -205,11 +263,13 @@
       <workItem from="1602729330969" duration="594000" />
       <workItem from="1602733568299" duration="2535000" />
       <workItem from="1602836664645" duration="3134000" />
+      <workItem from="1603191882741" duration="8921000" />
+      <workItem from="1603268976426" duration="6750000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33685000" />
+    <option name="totallyTimeSpent" value="49356000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -224,7 +284,7 @@
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3193138" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3270614" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -281,30 +341,48 @@ for save_i in range(len(outputs)):
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/anaconda3/envs/rknn/lib/python3.6/site-packages/rknn/api/rknn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="547" column="28" selection-start-line="547" selection-start-column="28" selection-end-line="547" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rknn.py" />
     <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/demo_python/test.py" />
-    <entry file="file://$PROJECT_DIR$/face_recognition/demo_python/test.py">
+    <entry file="file://$PROJECT_DIR$/official/demo_python/export_rknn_precompile_model.py" />
+    <entry file="file://$PROJECT_DIR$/export_rknn_precompile_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        <state relative-caret-position="315">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/official/demo_python/caffe/mobilenet_v2/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="37" column="63" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/face_detection/demo_python/test.py">
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1323589936/rknn/api/rknn_base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="37" column="48" lean-forward="true" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+        <state relative-caret-position="204">
+          <caret line="374" column="8" selection-start-line="374" selection-start-column="8" selection-end-line="374" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/official/demo_python/tflite/mobilenet_v1/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/official/examples/tflite/mobilenet_v1/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -318,10 +396,37 @@ for save_i in range(len(outputs)):
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/rknn/lib/python3.6/site-packages/rknn/api/rknn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="220" column="26" selection-start-line="220" selection-start-column="15" selection-end-line="220" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/yolov3/demo_python/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+        <state relative-caret-position="270">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/face_detection/demo_python/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/face_recognition/demo_python/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

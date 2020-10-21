@@ -6,7 +6,7 @@ from rknn.api import RKNN
 def show_outputs(outputs):
     output = outputs[0].reshape(-1)
     output_sorted = sorted(output, reverse=True)
-    top5_str = 'mobilenet_v2\n-----TOP 5-----\n'
+    top5_str = 'model\n-----TOP 5-----\n'
     for i in range(5):
         value = output_sorted[i]
         index = np.where(output == value)
@@ -28,7 +28,7 @@ if __name__ == '__main__':
 
     # pre-process config
     print('--> config model')
-    rknn.config(channel_mean_value='127.5 127.5 127.5 128.0', reorder_channel='0 1 2')
+    rknn.config(channel_mean_value='127.5 127.5 127.5 128.0', reorder_channel='0 1 2', target_platform='rv1126')
     print('done')
 
     # Load tensorflow model
@@ -37,23 +37,23 @@ if __name__ == '__main__':
                           proto='caffe',
                           blobs='/media/manu/intel/workspace/MXNet2Caffe/model_caffe/model-0001-nnie.caffemodel')
     if ret != 0:
-        print('Load mobilenet_v2 failed! Ret = {}'.format(ret))
+        print('Load model failed! Ret = {}'.format(ret))
         exit(ret)
     print('done')
 
     # Build model
     print('--> Building model')
-    ret = rknn.build(do_quantization=True, dataset='./dataset.txt')
+    ret = rknn.build(do_quantization=True, dataset='./dataset.txt', pre_compile=True)
     if ret != 0:
-        print('Build mobilenet_v2 failed!')
+        print('Build model failed!')
         exit(ret)
     print('done')
 
     # Export rknn model
     print('--> Export RKNN model')
-    ret = rknn.export_rknn('./arcface_r50.rknn')
+    ret = rknn.export_rknn('./model.rknn')
     if ret != 0:
-        print('Export arcface_r50.rknn failed!')
+        print('Export model.rknn failed!')
         exit(ret)
     print('done')
 
@@ -62,8 +62,8 @@ if __name__ == '__main__':
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
     print('--> Init runtime environment')
-    # ret = rknn.init_runtime()
-    ret = rknn.init_runtime(target='rk3399', device_id='TDs33101190500149')
+    ret = rknn.init_runtime()
+    # ret = rknn.init_runtime(target='rk3399', device_id='TDs33101190500149')
     if ret != 0:
         print('Init runtime environment failed')
         exit(ret)

@@ -28,7 +28,7 @@ if __name__ == '__main__':
 
     # pre-process config
     print('--> config model')
-    rknn.config(channel_mean_value='123.6750 116.2800 103.5300 58.3950', reorder_channel='0 1 2')
+    rknn.config(channel_mean_value='123.6750 116.2800 103.5300 58.3950', reorder_channel='0 1 2', target_platform='rv1126')
     print('done')
 
 
@@ -45,7 +45,7 @@ if __name__ == '__main__':
 
     # Build model
     print('--> Building model')
-    ret = rknn.build(do_quantization=True, dataset='./dataset.txt')
+    ret = rknn.build(do_quantization=True, dataset='./dataset.txt', pre_compile=True)
     if ret != 0:
         print('Build model failed!')
         exit(ret)
@@ -64,8 +64,8 @@ if __name__ == '__main__':
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
     print('--> Init runtime environment')
-    # ret = rknn.init_runtime()
-    ret = rknn.init_runtime(target='rk3399', device_id='TDs33101190500149')
+    ret = rknn.init_runtime()
+    # ret = rknn.init_runtime(target='rk3399', device_id='TDs33101190500149')
     if ret != 0:
         print('Init runtime environment failed')
         exit(ret)
