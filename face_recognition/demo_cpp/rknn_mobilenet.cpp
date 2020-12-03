@@ -86,7 +86,7 @@ int ReadLabelsFile(const string& file_name,
 int main(int argc, char** argv)
 {
     const char *img_path = "./1540490031567-0.504512.bmp";
-    const char *model_path = "./arcface_r50.rknn";
+    const char *model_path = "./model.rknn";
 //    const char *lable_path = "/tmp/labels.txt";
     const int output_elems = 512;
 
