@@ -2,3 +2,11 @@ face_recognition/demo_python/imgs
 face_recognition/demo_cpp/build_arm/
 
 *.rknn
+
+face_recognition/onnx/dataset\.txt
+
+*.jpg
+
+face_recognition/cpp/\.cproject
+
+face_recognition/cpp/\.project

@@ -5,8 +5,8 @@
 close all; clear all;
 
 %%
-opts.dir_img = '/home/manu/workspace/rknn/face_recognition/demo_python/imgs';
-opts.output = '/home/manu/workspace/rknn/face_recognition/demo_python/dataset.txt';
+opts.dir_img = '/home/manu/workspace/rknn/face_recognition/imgs';
+opts.output = '/home/manu/workspace/rknn/face_recognition/onnx/dataset.txt';
 
 %%
 list_img  = struct2cell(dir(fullfile(opts.dir_img, '*.jpg')))';
