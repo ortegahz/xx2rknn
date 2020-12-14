@@ -28,7 +28,8 @@ if __name__ == '__main__':
 
     # pre-process config
     print('--> config model')
-    rknn.config(channel_mean_value='0.0 0.0 0.0 1.0', reorder_channel='0 1 2', target_platform='rv1126')
+    # rknn.config(channel_mean_value='0.0 0.0 0.0 1.0', reorder_channel='0 1 2', target_platform=['rv1126'])
+    rknn.config(channel_mean_value='0.0 0.0 0.0 1.0', reorder_channel='0 1 2', target_platform=['rk3399pro'])
     print('done')
 
     # Load tensorflow model
@@ -43,7 +44,7 @@ if __name__ == '__main__':
 
     # Build model
     print('--> Building model')
-    ret = rknn.build(do_quantization=True, dataset='./dataset.txt', pre_compile=True)
+    ret = rknn.build(do_quantization=True, dataset='/home/manu/tmp/dataset.txt', pre_compile=True)
     if ret != 0:
         print('Build model failed!')
         exit(ret)
@@ -51,7 +52,7 @@ if __name__ == '__main__':
 
     # Export rknn model
     print('--> Export RKNN model')
-    ret = rknn.export_rknn('./model.rknn')
+    ret = rknn.export_rknn('/home/manu/tmp/model.rknn')
     if ret != 0:
         print('Export model.rknn failed!')
         exit(ret)

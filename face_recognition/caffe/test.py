@@ -29,14 +29,15 @@ if __name__ == '__main__':
     # pre-process config
     print('--> config model')
     # rknn.config(channel_mean_value='127.5 127.5 127.5 128.0', reorder_channel='0 1 2', target_platform=['rv1126'])
-    rknn.config(channel_mean_value='127.5 127.5 127.5 128.0', reorder_channel='0 1 2', target_platform=['rk3399pro'])
+    # rknn.config(channel_mean_value='127.5 127.5 127.5 128.0', reorder_channel='0 1 2', target_platform=['rk3399pro'])
+    rknn.config(channel_mean_value='127.5 127.5 127.5 127.5', reorder_channel='0 1 2', target_platform=['rk3399pro'])
     print('done')
 
     # Load tensorflow model
     print('--> Loading model')
-    ret = rknn.load_caffe(model='/home/manu/tmp/svn/model-0001-nnie.prototxt',
+    ret = rknn.load_caffe(model='/home/manu/tmp/model-0001-nnie.prototxt',
                           proto='caffe',
-                          blobs='/home/manu/tmp/svn/model-0001-nnie.caffemodel')
+                          blobs='/home/manu/tmp/model-0001-nnie.caffemodel')
     if ret != 0:
         print('Load model failed! Ret = {}'.format(ret))
         exit(ret)
@@ -44,7 +45,7 @@ if __name__ == '__main__':
 
     # Build model
     print('--> Building model')
-    ret = rknn.build(do_quantization=True, dataset='./dataset.txt', pre_compile=True)
+    ret = rknn.build(do_quantization=True, dataset='/home/manu/tmp/dataset.txt', pre_compile=True)
     # ret = rknn.build(do_quantization=True, dataset='./dataset.txt', pre_compile=False)
     if ret != 0:
         print('Build model failed!')
@@ -53,14 +54,14 @@ if __name__ == '__main__':
 
     # Export rknn model
     print('--> Export RKNN model')
-    ret = rknn.export_rknn('./model.rknn')
+    ret = rknn.export_rknn('/home/manu/tmp/model.rknn')
     if ret != 0:
         print('Export model.rknn failed!')
         exit(ret)
     print('done')
 
     # Set inputs
-    img = cv2.imread('/home/manu/data/pics/1540490031567-0.504512.bmp')
+    img = cv2.imread('/media/manu/samsung/pics/1540490031567-0.504512.bmp')
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
     print('--> Init runtime environment')

@@ -7,7 +7,7 @@ import numpy as np
 import cv2
 from rknn.api import RKNN
 
-ONNX_MODEL = '/home/manu/tmp/model.onnx'
+ONNX_MODEL = '/home/manu/tmp/modelc.onnx'
 RKNN_MODEL = '/home/manu/nfs/rk3399pro/demo_cpp_1.4.0/model.rknn'
 
 
@@ -83,7 +83,7 @@ if __name__ == '__main__':
     print('--> config model')
     # rknn.config(channel_mean_value='123.675 116.28 103.53 58.82', reorder_channel='0 1 2')
     # ([0 255] - 127.5) / 127.5 --> [-1 1]
-    rknn.config(channel_mean_value='127.5 127.5 127.5 127.5', reorder_channel='0 1 2', target_platform=['rk3399pro'])
+    rknn.config(channel_mean_value='0.0 0.0 0.0 255.0', reorder_channel='0 1 2', target_platform=['rk3399pro'])
     print('done')
 
     # Load tensorflow model
@@ -112,7 +112,7 @@ if __name__ == '__main__':
     print('done')
 
     # Set inputs
-    img = cv2.imread('/media/manu/samsung/pics/1540490031567-0.504512.bmp')
+    img = cv2.imread('/home/manu/tmp/mt.bmp')
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
     # init runtime environment
