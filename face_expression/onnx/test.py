@@ -78,7 +78,7 @@ if __name__ == '__main__':
             print(traceback.format_exc())
             exit(-1)
         print('done')
-    
+
     # pre-process config
     print('--> config model')
     # rknn.config(channel_mean_value='123.675 116.28 103.53 58.82', reorder_channel='0 1 2')
@@ -112,8 +112,11 @@ if __name__ == '__main__':
     print('done')
 
     # Set inputs
-    img = cv2.imread('/home/manu/tmp/mt.bmp')
+    img = cv2.imread('/home/manu/nfs/rk3399pro/demo_cpp_1.4.0/expression.bmp')
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+    # img = np.array((img.transpose(2, 0, 1) / 255.0), 'float32')
+    # np.savetxt('/home/manu/tmp/rknn_inputs.txt', img.flatten(), fmt="%f", delimiter="\n")
 
     # init runtime environment
     print('--> Init runtime environment')

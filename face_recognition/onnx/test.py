@@ -8,7 +8,7 @@ import cv2
 from rknn.api import RKNN
 
 ONNX_MODEL = '/home/manu/tmp/model.onnx'
-RKNN_MODEL = '/home/manu/nfs/rk3399pro/demo_cpp_1.4.0/model.rknn'
+RKNN_MODEL = '/home/manu/tmp/model.rknn'
 
 
 def show_outputs(outputs):
@@ -83,7 +83,8 @@ if __name__ == '__main__':
     print('--> config model')
     # rknn.config(channel_mean_value='123.675 116.28 103.53 58.82', reorder_channel='0 1 2')
     # ([0 255] - 127.5) / 127.5 --> [-1 1]
-    rknn.config(channel_mean_value='127.5 127.5 127.5 127.5', reorder_channel='0 1 2', target_platform=['rk3399pro'])
+    # rknn.config(channel_mean_value='127.5 127.5 127.5 127.5', reorder_channel='0 1 2', target_platform=['rk3399pro'])
+    rknn.config(channel_mean_value='127.5 127.5 127.5 127.5', reorder_channel='0 1 2', target_platform=['rv1126'])
     print('done')
 
     # Load tensorflow model
