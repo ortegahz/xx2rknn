@@ -1,0 +1,6 @@
+# install
+rknn-toolkit-v1.6.0
+
+# step
+pth to onnx (branch manu_pfc_pytorch_server) (replace <project>/recognition/partial_fc/pytorch/backbones)
+test.py
