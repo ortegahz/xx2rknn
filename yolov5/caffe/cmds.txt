@@ -1,0 +1,12 @@
+# install
+rknn-toolkit-v1.4.0
+
+# step
+pth to onnx & onnx to onnxc (project yolov5 with branch manu_hd900)
+onnx to caffe (project onnx2caffe with branch manu_yolov52caffe) [! no reshpe and transpose layers in caffemodel so use onnxce for comparison]
+caffe to rknn (test.py)
+
+# verification
+<classify.py> /media/manu/intel/workspace/yolov5/inference/images_onnx/bus_640x640.bmp /home/manu/tmp/classify.npy --model_def /media/manu/intel/workspace/onnx2caffe/model/bestc.prototxt --pretrained_model /media/manu/intel/workspace/onnx2caffe/model/bestc.caffemodel --images_dim 640,640 --center_only --channel_swap 0,1,2
+<classify.py> /media/manu/intel/workspace/yolov5/inference/images_onnx/126_1152_576.bmp /home/manu/tmp/classify.npy --model_def /media/manu/intel/workspace/onnx2caffe/model/bestc.prototxt --pretrained_model /media/manu/intel/workspace/onnx2caffe/model/bestc.caffemodel --images_dim 576,1152 --center_only --channel_swap 0,1,2
+

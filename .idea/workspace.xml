@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db821421-b582-454d-a910-806159692af1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/dir2dataset.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yolov5/caffe/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/yolov5/caffe/test.py" afterDir="false" />
-    </list>
+    <list default="true" id="db821421-b582-454d-a910-806159692af1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +32,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmds_tb-rk3399prod.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="285">
+              <caret line="19" column="118" lean-forward="true" selection-start-line="19" selection-start-column="118" selection-end-line="19" selection-end-column="118" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yolov5/caffe/cmds.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="141" selection-start-line="5" selection-start-column="141" selection-end-line="5" selection-end-column="141" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yolov5/caffe/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="353">
@@ -103,6 +109,7 @@
         <option value="$PROJECT_DIR$/face_recognition/onnx/cmds.txt" />
         <option value="$PROJECT_DIR$/yolov5/onnx/test.py" />
         <option value="$PROJECT_DIR$/yolov5/caffe/test.py" />
+        <option value="$PROJECT_DIR$/yolov5/caffe/cmds.txt" />
       </list>
     </option>
   </component>
@@ -333,12 +340,12 @@
       <workItem from="1622787941471" duration="7651000" />
       <workItem from="1624873435544" duration="15941000" />
       <workItem from="1626146331187" duration="11091000" />
-      <workItem from="1626341813119" duration="736000" />
+      <workItem from="1626341813119" duration="1254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203165000" />
+    <option name="totallyTimeSpent" value="203683000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -532,13 +539,6 @@ for save_i in range(len(outputs)):
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmds_tb-rk3399prod.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yolov5/caffe/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -546,6 +546,20 @@ for save_i in range(len(outputs)):
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmds_tb-rk3399prod.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="118" lean-forward="true" selection-start-line="19" selection-start-column="118" selection-end-line="19" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yolov5/caffe/cmds.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="141" selection-start-line="5" selection-start-column="141" selection-end-line="5" selection-end-column="141" />
         </state>
       </provider>
     </entry>
