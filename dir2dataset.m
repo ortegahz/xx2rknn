@@ -2,7 +2,7 @@
 % author: manu
 
 %%
-close all; clear all;
+close all; clear;
 
 %%
 opts.dir_img = '/home/manu/tmp/imgs/';
