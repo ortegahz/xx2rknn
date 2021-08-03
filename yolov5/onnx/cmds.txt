@@ -1,0 +1,6 @@
+# install
+rknn-toolkit-v1.6.0
+
+# ignore some warnings
+"Do not support shape > 4"
+"VipSram: Wrong addr, start: <x>, end:<x>"
