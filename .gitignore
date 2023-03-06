@@ -10,3 +10,5 @@ face_recognition/onnx/dataset\.txt
 face_recognition/cpp/\.cproject
 
 face_recognition/cpp/\.project
+
+\.idea/

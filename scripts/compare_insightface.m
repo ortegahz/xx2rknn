@@ -4,8 +4,8 @@ clear; close all;
 %%
 % out_ref = load('/home/manu/tmp/resnet50v2_rknn.txt');
 % out_target = load('/home/manu/tmp/resnet50v2_onnx.txt');
-out_ref = load('/home/manu/tmp/feat_rknn.txt');
-out_target = load('/home/manu/tmp/feat_onnx.txt');
+out_ref = load('/home/manu/tmp/output_save_infer.txt');
+out_target = load('/home/manu/tmp/output_save.txt');
 
 %%
 out_all = cat(1, out_ref, out_target);

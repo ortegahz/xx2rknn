@@ -7,8 +7,11 @@ import numpy as np
 import cv2
 from rknn.api import RKNN
 
-ONNX_MODEL = '/home/manu/tmp/model.onnx'
-RKNN_MODEL = '/home/manu/tmp/model.rknn'
+PATH_DS = '/home/manu/tmp/dataset_single.txt'
+PATH_IMG = '/media/manu/samsung/pics/1001_org.bmp'
+
+ONNX_MODEL = '/home/manu/tmp/wf42m_pfc02_8gpus_r50_bs1k/model.onnx'
+RKNN_MODEL = '/home/manu/tmp/face_recog_f16_1126.rknn'
 
 
 def show_outputs(outputs):
@@ -98,7 +101,7 @@ if __name__ == '__main__':
     # Build model
     print('--> Building model')
     # ret = rknn.build(do_quantization=True, dataset='./dataset.txt')
-    ret = rknn.build(do_quantization=True, dataset='/home/manu/tmp/dataset.txt', pre_compile=False)
+    ret = rknn.build(do_quantization=False, dataset=PATH_DS, pre_compile=False)
     if ret != 0:
         print('Build model failed!')
         exit(ret)
@@ -113,7 +116,7 @@ if __name__ == '__main__':
     print('done')
 
     # Set inputs
-    img = cv2.imread('/media/manu/samsung/pics/1540490031567-0.504512.bmp')
+    img = cv2.imread(PATH_IMG)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
     # init runtime environment

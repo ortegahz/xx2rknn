@@ -76,7 +76,8 @@ if __name__ == '__main__':
 
     # pre-process config
     print('--> config model')
-    rknn.config(mean_values=[127.5, 127.5, 127.5], std_values=[127.5, 127.5, 127.5], target_platform='rk3588')
+    rknn.config(mean_values=[127.5, 127.5, 127.5], std_values=[127.5, 127.5, 127.5],
+                target_platform='rk3588')
     print('done')
 
     # Load model
@@ -89,7 +90,7 @@ if __name__ == '__main__':
 
     # Build model
     print('--> Building model')
-    ret = rknn.build(do_quantization=True, dataset=PATH_DS)
+    ret = rknn.build(do_quantization=False, dataset=PATH_DS)
     if ret != 0:
         print('Build model failed!')
         exit(ret)
